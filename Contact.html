@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brishika Basnet | Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    /* Reset and base */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #dbe9f4, #a9c9e8);
+      color: #2e3440;
+      min-height: 100vh;
+      display: flex; flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+    /* Navigation */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #344e41;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      width: 100%;
+      padding: 15px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      z-index: 1000;
+      margin-bottom: 40px;
+    }
+    nav a {
+      color: #f0f4f8;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1.2rem;
+      padding: 8px 18px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background: #70a1a1;
+      color: white;
+    }
+    nav a.active {
+      background: #70a1a1;
+      color: white;
+    }
+    /* Header */
+    header {
+      max-width: 900px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: #344e41;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-weight: 300;
+      font-size: 1.3rem;
+      color: #52606d;
+    }
+    /* Main content */
+    main {
+      background: white;
+      max-width: 700px;
+      width: 100%;
+      padding: 60px 50px;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(50, 50, 50, 0.15);
+      text-align: center;
+      color: #344e41;
+      font-size: 1.3rem;
+      line-height: 1.7;
+      animation: fadeInUp 1.3s ease forwards;
+      opacity: 0;
+    }
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    /* Contact links style */
+    main p {
+      margin-bottom: 40px;
+      user-select: text;
+    }
+    main a.contact-btn {
+      display: inline-block;
+      background: #70a1a1;
+      color: white;
+      padding: 18px 40px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.4rem;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      margin-top: 10px;
+      user-select: none;
+    }
+    main a.contact-btn:hover {
+      background: #4e807f;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+    }
+    /* Responsive */
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2.8rem;
+      }
+      main {
+        padding: 40px 30px;
+        font-size: 1.15rem;
+      }
+      nav a {
+        font-size: 1rem;
+        padding: 7px 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Contact Me</h1>
+    <p>I’d love to hear from you! Feel free to reach out via email.</p>
+  </header>
+
+  <main>
+    <p>
+      <strong>Email:</strong><br />
+      <a href="mailto:basnetbrishika@gmail.com" class="contact-btn">basnetbrishika@gmail.com</a>
+    </p>
+  </main>
+
+</body>
+</html>
